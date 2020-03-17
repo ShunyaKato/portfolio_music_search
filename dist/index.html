@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>曲検索</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" type='text/css'
+    media='all' />
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+  <header id="js-headerFix">
+    <div class="header__responsive__top">
+      <img class="header__responsive__top__logo" src="../src/images/logo.png" alt="">
+      <div class="header__responsive__top__btn">
+        <a class="header__responsive__top__btn--close header__responsive__btn__hide" href="javascript:void(0)"
+          id="header-responsive-close"><i class="fas fa-times"></i></a>
+        <a class="header__responsive__top__btn--open" href="javascript:void(0)" id="header-responsive-open"><i
+            class="fas fa-bars"></i></a>
+      </div>
+    </div>
+    <div class="header__responsive container" id="header-responsive-show">
+      <div class=" header-top">
+        <h1 class="header-top__title">曲検索</h1>
+        <!-- <div class="header-top__wrap">
+          <a class="header-top__wrap__contact" href=""><span></span>お問い合わせ</a>
+          <p class="header-top__wrap__text">免税店</p>
+          <div class="header-top__wrap__languages">
+            <a class="header-top__wrap__languages__language" href="">ภาษาไทย</a>
+            <a class="header-top__wrap__languages__language" href="">한국</a>
+            <a class="header-top__wrap__languages__language" href="">English</a>
+            <a class="header-top__wrap__languages__language" href="">简体字</a>
+            <a class="header-top__wrap__languages__language" href="">繁体字</a>
+          </div>
+        </div> -->
+      </div>
+      <ul class="header__nav">
+        <li class="header__nav__content">
+          <a href=""><span>ジャンル別</span></a>
+        </li>
+        <li class="header__nav__content">
+          <a href=""><span>系統別</span></a>
+        </li>
+        <li class="header__nav__content">
+          <a href=""><span>○○別</span></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="index__slider" id="js-headerFix__marginAdd">
+    <div class="index__slider__main">
+      <div class="swiper-container main__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <a href="">
+                <img src="../src/images/kimuchi.jpg" alt="">
+                <div class="content__copy">
+                  <p class="content__copy__type content__copy__type--campaign" data-swiper-parallax-opacity="0">キムチ鍋
+                  </p>
+                  <p class="content__copy__text" data-swiper-parallax-opacity="0">
+                    寒い日にはやっぱりピリ辛のキムチ鍋！
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <a href="">
+                <img src="../src/images/tounyu.png" alt="">
+                <div class="content__copy">
+                  <p class="content__copy__type content__copy__type--campaign" data-swiper-parallax-opacity="0">豆乳鍋
+                  </p>
+                  <p class="content__copy__text" data-swiper-parallax-opacity="0">
+                    豆乳のやさしい甘さでほっこり！
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <a href="">
+                <img src="../src/images/motsu.jpg" alt="">
+                <div class="content__copy">
+                  <p class="content__copy__type content__copy__type--campaign" data-swiper-parallax-opacity="0">もつ鍋
+                  </p>
+                  <p class="content__copy__text" data-swiper-parallax-opacity="0">
+                    博多名物「もつ鍋」たっぷりのもつでお肌プリプリ！
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <a href="">
+                <img src="../src/images/mizutaki.png" alt="">
+                <div class="content__copy">
+                  <p class="content__copy__type content__copy__type--campaign" data-swiper-parallax-opacity="0">水炊き
+                  </p>
+                  <p class="content__copy__text" data-swiper-parallax-opacity="0">鶏の出汁が美味しい、シンプルで味わい深い一品！</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <a href="">
+                <img src="../src/images/yosenabe.jpg" alt="">
+                <div class="content__copy">
+                  <p class="content__copy__type content__copy__type--campaign" data-swiper-parallax-opacity="0">寄せ鍋
+                  </p>
+                  <p class="content__copy__text" data-swiper-parallax-opacity="0">海鮮を食べるならコレ！魚介の旨味を余すことなく食べられる！</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="search__section">
+    <div class="container search__section__contents">
+      <a class="search__section__contents__satudora" href="">
+        <img src="../src/images/ico_search01.png" alt="">
+        <p><span>サツドラ</span>をさがす</p>
+      </a>
+      <a class="search__section__contents__pharmacy" href="">
+        <img src="../src/images/ico_search02.png" alt="">
+        <p><span>調剤薬局</span>をさがす</p>
+      </a>
+      <div class="search__section__contents__taxfree">
+        <a class="search__section__contents__taxfree__shop" href="">
+          <img src="../src/images/ico_search03.png" alt="">
+          <p><span>免税店</span>をさがす</p>
+        </a>
+        <ul>
+          <li><a class="search__section__contents__taxfree__language" href="">ภาษาไทย</a></li>
+          <li><a class="search__section__contents__taxfree__language" href="">한국</a></li>
+          <li><a class="search__section__contents__taxfree__language" href="">English</a></li>
+          <li><a class="search__section__contents__taxfree__language" href="">简体字</a></li>
+          <li><a class="search__section__contents__taxfree__language" href="">繁体字</a></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+  <div class="genreSection">
+    <h2 class="section__title">ジャンル別</h2>
+    <div class="genreSection__contents container">
+      <div class="genreSection__contents__store">
+        <a href="">
+          <p><i class="fas fa-chevron-right"></i>J-POP</p>
+        </a>
+        <a href="">
+          <p><i class="fas fa-chevron-right"></i>ロック</p>
+        </a>
+        <a href="">
+          <p><i class="fas fa-chevron-right"></i>オルタナティブ</p>
+        </a>
+        <a href="">
+          <p><i class="fas fa-chevron-right"></i>ポップ</p>
+        </a>
+        <a href="">
+          <p><i class="fas fa-chevron-right"></i>ブルース</p>
+        </a>
+        <a href="">
+          <p><i class="fas fa-chevron-right"></i>アニメ</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="typeSection">
+    <h2 class="section__title">系統別</h2>
+    <div class="typeSection__contents container">
+      <div class="typeSection__contents__store">
+        <a href="">
+          <p><i class="fas fa-chevron-right"></i>バンド</p>
+        </a>
+        <a href="">
+          <p><i class="fas fa-chevron-right"></i>男性ソロ</p>
+        </a>
+        <a href="">
+          <p><i class="fas fa-chevron-right"></i>女性ソロ</p>
+        </a>
+        <a href="">
+          <p><i class="fas fa-chevron-right"></i>二人組</p>
+        </a>
+        <a href="">
+          <p><i class="fas fa-chevron-right"></i>声優</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="campaign">
+    <div class="campaign__title__layout">
+      <div class="campaign__title event__title">
+        <img class="event__title__image" src="../src/images/event_title.png" alt="">
+        <h2 class="event__title__copy">イベント・キャンペーン</h2>
+      </div>
+    </div>
+    <div class="campaign__hide">
+      <div class="campaign__content">
+        <div class="swiper-container campaign__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/2b23bfd951509b71d4e9dcf439031616.jpg" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">サツドラ商品券1,000円分が当たる！サツドラ×エリエール共同企画　生活応援キャンペーン！</p>
+                    <p class="swiper-slide__content__texts__title">サツドラ商品券1,000円分が当たる！サツドラ×エリエール共同企画　生活応援キャンペーン！</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/aa3748927803878abb1608faa1b2e71a.jpg" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">当選者総額30万EZOポイントプレゼント！花王オーラルケア商品を使ってよい歯＆いい歯でハハハ！キャンペーン！
+                    </p>
+                    <p class="swiper-slide__content__texts__title">
+                      当選者総額30万EZOポイントプレゼント！花王オーラルケア商品を使ってよい歯＆いい歯でハハハ！キャンペーン！
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/2001shh_banner_1.jpg" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">商品券2,000円分を抽選で50名様にプレゼント！サツドラ×白元アース×HBCキャンペーン</p>
+                    <p class="swiper-slide__content__texts__title">商品券2,000円分を抽選で50名様にプレゼント！サツドラ×白元アース×HBCキャンペーン</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/satudora_bnr_1000-598.png" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">1月はサツドラ限定nanacoポイントが2倍！！</p>
+                    <p class="swiper-slide__content__texts__title">1月はサツドラ限定nanacoポイントが2倍！！</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/adc4ff2b88f488d5db2fd255b71bfd58.png" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">エフティ資生堂から純白専科 すっぴん色づく美容液フォンデュ 新発売キャンペーン</p>
+                    <p class="swiper-slide__content__texts__title">エフティ資生堂から純白専科 すっぴん色づく美容液フォンデュ 新発売キャンペーン</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/905948ff8df11986a7ff2621cd2f3e26.png" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">コーセーコスメポートからジュレームアミノシュープリーム新発売</p>
+                    <p class="swiper-slide__content__texts__title">コーセーコスメポートからジュレームアミノシュープリーム新発売</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/62a6baaa9ae3b7942f536977a57da78d.png" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">アサヒ飲料から『守る働く乳酸菌』『届く強さの乳酸菌 Ｗ』お買い得なキャンペーン</p>
+                    <p class="swiper-slide__content__texts__title">アサヒ飲料から『守る働く乳酸菌』『届く強さの乳酸菌 Ｗ』お買い得なキャンペーン</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/2feecf2f2cacd2cc7614cb3f0ed87fc0.jpg" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">忙しいあなたへ「サツドラスタイル」”ラク短”ヘアアレンジ講座 lesson.06</p>
+                    <p class="swiper-slide__content__texts__title">忙しいあなたへ「サツドラスタイル」”ラク短”ヘアアレンジ講座 lesson.06</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/feff279b6af6a4c887340eb917fd1178.jpg" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">大正製薬 リポビタンアルコベール ポイント10倍キャンペーン</p>
+                    <p class="swiper-slide__content__texts__title">大正製薬 リポビタンアルコベール ポイント10倍キャンペーン</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/f5750f9befac23f1acc312c47b44b20b.png" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">P&G ジェルボール3D・デオドラントビーズ・アロマジュエル ポイント10倍キャンペーン</p>
+                    <p class="swiper-slide__content__texts__title">P&G ジェルボール3D・デオドラントビーズ・アロマジュエル ポイント10倍キャンペーン</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/785926c1b0d360c95caaeea14d9b18da.jpg" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">P&G　オリンピックキャンペーン</p>
+                    <p class="swiper-slide__content__texts__title">P&G　オリンピックキャンペーン</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/satsudorawebbaneer_last.png" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">https://youtu.be/DNNHX3C-5xo</p>
+                    <p class="swiper-slide__content__texts__title">サツドラFES2019 ご来場ありがとうございました</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/29e244d86176b8508c841f2e03bd5385.jpg" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">全レジで対応可能！4つのスマホ決済が使えるようになりました！</p>
+                    <p class="swiper-slide__content__texts__title">全レジで対応可能！4つのスマホ決済が使えるようになりました！</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/95621cc9751c7ba3dbd17bdd1de7d960.png" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">処方箋の受付はネット予約が便利です</p>
+                    <p class="swiper-slide__content__texts__title">処方箋の受付はネット予約が便利です</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/b74c821990f91e5aa85961b12348b262-1.jpg" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">サツドラ×ロート製薬</p>
+                    <p class="swiper-slide__content__texts__title">LIFTER『肌印象』とは</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/d7a68982f962c9f2af8ce3b5c079e93c.jpg" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">サツドラ×ロート製薬</p>
+                    <p class="swiper-slide__content__texts__title">全く新しいセルフエステスキンケア LIFTER</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/bn_1711docomo_l-1000x598.jpg" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">サツドラでdポイント</p>
+                    <p class="swiper-slide__content__texts__title">サツドラでdポイントがたまる！つかえる！</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/IMG_5176.jpg" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">ふたりの妊活 応援プロジェクト</p>
+                    <p class="swiper-slide__content__texts__title">ふたりの妊活 応援プロジェクト</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="">
+                  <img src="../src/images/obagi.jpg" alt="">
+                  <div class="swiper-slide__content__texts">
+                    <p class="swiper-slide__content__texts__text">オバジエステのご案内</p>
+                    <p class="swiper-slide__content__texts__title">オバジエステのご案内</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- <div class="bargainInfomation">
+    <div class="bargainInfomation__container container">
+      <div class="bargainInfomation__container__title">
+        <h2>お得な情報</h2>
+        <img src="../src/images/title_point_green.png" alt="">
+      </div>
+      <div class="bargainInfomation__container__wrap">
+        <div class="bargainInfomation__container__wrap__flyerContent">
+          <a class="flyerSearch" href="">
+            <img src="../src/images/otoku_info_shop.png" alt="">
+            <i class="fas fa-chevron-right"></i>
+          </a>
+          <a class="flyerList" href="">
+            <img src="../src/images/otoku_info_flyer.png" alt="">
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+        <a class="bargainInfomation__container__wrap__mailMagagine" href="">
+          <img src="../src/images/otoku_info_mailmaga.png" alt="">
+          <p>注目の新商品やオトクなセール情報、<br>お買い物がもっと楽しくなる<span></span>クーポンをお届け！</p>
+        </a>
+        <div class="bargainInfomation__container__wrap__none">
+          <p>本日は掲載がありません</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- <div class="movieGallery">
+    <img class="movieGallery__logo" src="../src/images/ico_movie.png" alt="">
+    <h2 class="section__title">ムービーギャラリー</h2>
+    <div class="movieGallery__container container">
+      <a class="movieGallery__container__wrap" href="">
+        <div class="movieGallery__container__wrap__image image1">
+          <div class="background-mask">
+            <div class="movieGallery__container__wrap__image__playBtn">
+              <div class="movieGallery__container__wrap__image__playBtn__triangle"></div>
+            </div>
+          </div>
+        </div>
+        <p class="movieGallery__container__wrap__text">ポイント5倍CM</p>
+      </a>
+      <a class="movieGallery__container__wrap" href="">
+        <div class="movieGallery__container__wrap__image image2">
+          <div class="background-mask">
+            <div class="movieGallery__container__wrap__image__playBtn">
+              <div class="movieGallery__container__wrap__image__playBtn__triangle"></div>
+            </div>
+          </div>
+        </div>
+        <p class="movieGallery__container__wrap__text">サツドラGABAX　15秒　上司編</p>
+      </a>
+      <a class="movieGallery__container__wrap" href="">
+        <div class="movieGallery__container__wrap__image image3">
+          <div class="background-mask">
+            <div class="movieGallery__container__wrap__image__playBtn">
+              <div class="movieGallery__container__wrap__image__playBtn__triangle"></div>
+            </div>
+          </div>
+        </div>
+        <p class="movieGallery__container__wrap__text">サツドラ超炭酸水　15秒　大通公園編</p>
+      </a>
+    </div>
+    <a class="movieGallery__container__Youtube" href="">
+      <p>Youtube公式チャンネルはこちら<i class="fas fa-chevron-right"></i></p>
+    </a>
+  </div> -->
+  <!-- <div class="service">
+    <h2 class="section__title">サービス</h2>
+    <div class="service__container container">
+      <a class="service__container__wrap" href="">
+        <img src="../src/images/service01.png" alt="">
+        <p class="service__container__wrap__text">北海道共通ポイントカード</p>
+        <p class="service__container__wrap__title">エゾカ</p>
+      </a>
+      <a class="service__container__wrap" href="">
+        <img src="../src/images/service02.png" alt="">
+        <p class="service__container__wrap__text">お荷物をご自宅までお届け</p>
+        <p class="service__container__wrap__title">手ぶらでお買物便</p>
+      </a>
+      <a class="service__container__wrap" href="">
+        <img src="../src/images/service06.jpg" alt="">
+        <p class="service__container__wrap__text">特典カードの提示で5％割引</p>
+        <p class="service__container__wrap__title">どさんこ・子育て特典制度</p>
+      </a>
+      <a class="service__container__wrap" href="">
+        <img src="../src/images/service04.jpg" alt="">
+        <p class="service__container__wrap__text">北海道の妊婦さんへの贈りもの</p>
+        <p class="service__container__wrap__title">ベビー用品お得クーポン</p>
+      </a>
+      <a class="service__container__wrap" href="">
+        <img src="../src/images/service05.jpg" alt="">
+        <p class="service__container__wrap__text">北海道の妊婦さんへの贈りもの</p>
+        <p class="service__container__wrap__title">お買物10%割引券</p>
+      </a>
+    </div>
+  </div> -->
+  <!-- <div class="openInfomation">
+    <h2 class="section__title">新店舗オープン情報</h2>
+    <div class="openInfomation__content">
+      <div class="swiper-container openInfomation__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide__content">
+              <img src="../src/images/3f2d173ce81dd1450bd8ddeb7fc90740.jpg" alt="">
+              <div class="swiper-slide__content__wrap">
+                <p class="swiper-slide__content__wrap__day">2020.01.30</p>
+                <h2 class="swiper-slide__content__wrap__title">「サツドラ屯田8条店」オープン！</h2>
+                <p class="swiper-slide__content__wrap__address">〒002-0858　札幌市北区屯田8条7丁目10番33号</p>
+                <p class="swiper-slide__content__wrap__telNumber">TEL：011-299-1911 / 通常営業時間：9:00～21:50</p>
+                <div class="swiper-slide__content__wrap__button">
+                  <a href="">
+                    <p>MAP<i class="fas fa-chevron-right"></i></p>
+                  </a>
+                  <a href="">
+                    <p>店舗情報<i class="fas fa-chevron-right"></i></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__content">
+              <img src="../src/images/adbb49d5230bc34021ec5a80ab77ebc4.jpg" alt="">
+              <div class="swiper-slide__content__wrap">
+                <p class="swiper-slide__content__wrap__day">2020.01.06</p>
+                <h2 class="swiper-slide__content__wrap__title">「サツドラ薬局 手稲前田2条店」オープン！</h2>
+                <p class="swiper-slide__content__wrap__address">〒006-0812　札幌市手稲区前田2条13丁目3番20号　サツドラ手稲前田2条店内</p>
+                <p class="swiper-slide__content__wrap__telNumber">TEL：011-688-8251 / 通常営業時間：9:00～19:00</p>
+                <div class="swiper-slide__content__wrap__button">
+                  <a href="">
+                    <p>MAP<i class="fas fa-chevron-right"></i></p>
+                  </a>
+                  <a href="">
+                    <p>店舗情報<i class="fas fa-chevron-right"></i></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__content">
+              <img src="../src/images/5aa238706d9b3c3794f1be22c89d49ec-500x350.jpg" alt="">
+              <div class="swiper-slide__content__wrap">
+                <p class="swiper-slide__content__wrap__day">2019.11.09</p>
+                <h2 class="swiper-slide__content__wrap__title">「サツドラ南22条店」オープン！</h2>
+                <p class="swiper-slide__content__wrap__address">〒064-0923　札幌市中央区南23条西7丁目1-1</p>
+                <p class="swiper-slide__content__wrap__telNumber">TEL：011-213-1336 / 通常営業時間：9:00～21:50</p>
+                <div class="swiper-slide__content__wrap__button">
+                  <a href="">
+                    <p>MAP<i class="fas fa-chevron-right"></i></p>
+                  </a>
+                  <a href="">
+                    <p>店舗情報<i class="fas fa-chevron-right"></i></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__content">
+              <img src="../src/images/b459885febbf929fcd9f4324da14f95b-500x350.jpg" alt="">
+              <div class="swiper-slide__content__wrap">
+                <p class="swiper-slide__content__wrap__day">2019.10.17</p>
+                <h2 class="swiper-slide__content__wrap__title">「サツドラ函館柏木店」オープン！</h2>
+                <p class="swiper-slide__content__wrap__address">〒042-0942　函館市柏木町11番1号</p>
+                <p class="swiper-slide__content__wrap__telNumber">TEL：0138-30-1001 / 通常営業時間：9:00～21:50</p>
+                <div class="swiper-slide__content__wrap__button">
+                  <a href="">
+                    <p>MAP<i class="fas fa-chevron-right"></i></p>
+                  </a>
+                  <a href="">
+                    <p>店舗情報<i class="fas fa-chevron-right"></i></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__content">
+              <img src="../src/images/821c718c5d36a3055298a7514ef73115-500x350.jpeg" alt="">
+              <div class="swiper-slide__content__wrap">
+                <p class="swiper-slide__content__wrap__day">2019.08.09</p>
+                <h2 class="swiper-slide__content__wrap__title">「サツドラ函館石川店」オープン！</h2>
+                <p class="swiper-slide__content__wrap__address">〒041-0802　函館市石川町470番地2</p>
+                <p class="swiper-slide__content__wrap__telNumber">TEL：0138-34-6770 / 通常営業時間：9:00～21:50</p>
+                <div class="swiper-slide__content__wrap__button">
+                  <a href="">
+                    <p>MAP<i class="fas fa-chevron-right"></i></p>
+                  </a>
+                  <a href="">
+                    <p>店舗情報<i class="fas fa-chevron-right"></i></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <a class="openInfomation__shopList" href="">
+      <p>店舗一覧<i class="fas fa-chevron-right"></i></p>
+    </a>
+  </div> -->
+  <!-- <div class="recruit">
+    <div class="recruit__container container">
+      <a class="recruit__container__shop" href="">
+        <div class="recruit__container__shop__text">
+          <h2>店舗物件情報募集</h2>
+          <p>サッポロドラッグストアーでは、店舗用物件(土地または建物) を探しています。<br>ぜひ、物件情報をお寄せください。担当者が調査させて頂きます。</p>
+        </div>
+        <img src="../src/images/bnr_shop_img.jpg" alt="">
+      </a>
+      <div class="recruit__container__wrap">
+        <a href="">
+          <img src="../src/images/bnr_recruit_b01.jpg" alt="">
+        </a>
+        <a href="">
+          <img src="../src/images/bnr_recruit_b02.jpg" alt="">
+        </a>
+        <a href="">
+          <img src="../src/images/bnr_recruit_b03.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div> -->
+  <!-- <footer>
+    <nav>
+      <ul>
+        <li><a href="">サツドラホールディングス</a></li>
+        <li><a href="">サイトマップ</a></li>
+        <li><a href="">個人情報保護方針</a></li>
+        <li><a href="">反社会的勢力排除宣言</a></li>
+        <li><a href="">ソーシャルメディアポリシー</a></li>
+      </ul>
+    </nav>
+    <p class="footer__corporate">© 2016 SAPPORO DRUG STORE CO.,LTD.</p>
+  </footer> -->
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="../src/swiper.js"></script>
+</body>
