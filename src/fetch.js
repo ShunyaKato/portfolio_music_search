@@ -1,6 +1,8 @@
 import fetch from 'node-fetch';
 
-fetch('	https://api.spotify.com/v1/search')
+console.log(fetch);
+
+fetch('https://api.spotify.com/v1/search')
   .then(response => {
     return response.json();
   }).then(res => {
