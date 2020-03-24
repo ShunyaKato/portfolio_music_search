@@ -23,6 +23,7 @@
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
+    "jquery": "^3.4.1",
     "node-fetch": "^2.6.0"
   }
 }

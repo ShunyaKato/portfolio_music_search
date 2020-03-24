@@ -148,15 +148,13 @@ header {
           align-items: center;
           filter: brightness(70%);
           .swiper-content {
-            width: 645px;
+            width: 480px;
             height: 100%;
-            background-color: #ffffff;
             img {
-              width: 645px;
-              height: 387px;
+              width: 480px;
+              height: 480px;
               border-radius: 10px;
               margin-bottom: 10px;
-              background-color: #ffffff;
             }
           }
         }
@@ -176,7 +174,6 @@ header {
   height: 50px;
   border-radius: 50%;
   left: 0;
-  top: 39%;
   background-clip: padding-box;
   &:after {
     font-size: 16px;
@@ -190,7 +187,6 @@ header {
   height: 50px;
   border-radius: 50%;
   right: 0;
-  top: 39%;
   background-clip: padding-box;
   &:after {
     font-size: 16px;
