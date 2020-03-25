@@ -2,10 +2,8 @@ import fetch from 'node-fetch';
 
 console.log(fetch);
 
-
-export const fetchApi = async () => {
+export const fetchApi = async (artistName) => {
   let data;
-  let artistName = "john mayer";
 
   await fetch(`https://genius.p.rapidapi.com/search?q=${artistName}`, {
     headers: {

@@ -2,7 +2,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>曲検索</title>
+  <title>Music Liblary</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" type='text/css'
     media='all' />
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -14,17 +14,17 @@
   <header id="js-headerFix">
     <div class="header__responsive container" id="header-responsive-show">
       <div class=" header-top">
-        <h1 class="header-top__title">曲検索</h1>
+        <h1 class="header-top__title">Music Liblary</h1>
       </div>
       <ul class="header__nav">
         <li class="header__nav__content">
-          <a href=""><span>ジャンル別</span></a>
+          <a href=""><span>洋楽</span></a>
         </li>
         <li class="header__nav__content">
-          <a href=""><span>系統別</span></a>
+          <a href=""><span>邦楽</span></a>
         </li>
         <li class="header__nav__content">
-          <a href=""><span>○○別</span></a>
+          <a href=""><span>○○○</span></a>
         </li>
       </ul>
     </div>
@@ -37,6 +37,7 @@
             <div class="swiper-content">
               <a id="image1" href="">
                 <img src="" alt="">
+                <h2></h2>
               </a>
             </div>
           </div>
@@ -44,6 +45,7 @@
             <div class="swiper-content">
               <a id="image2" href="">
                 <img src="" alt="">
+                <h2></h2>
               </a>
             </div>
           </div>
@@ -51,6 +53,7 @@
             <div class="swiper-content">
               <a id="image3" href="">
                 <img src="" alt="">
+                <h2></h2>
               </a>
             </div>
           </div>
@@ -58,6 +61,7 @@
             <div class="swiper-content">
               <a id="image4" href="">
                 <img src="" alt="">
+                <h2></h2>
               </a>
             </div>
           </div>
@@ -68,48 +72,48 @@
     </div>
   </div>
   <div class="genreSection">
-    <h2 class="section__title">ジャンル別</h2>
+    <h2 class="section__title">洋楽</h2>
     <div class="genreSection__contents container">
       <div class="genreSection__contents__store">
-        <a href="">
-          <p><i class="fas fa-chevron-right"></i>J-POP</p>
+        <a id="artist1" data-artist="John Mayer" href="javascript:void(0)">
+          <p><i class="fas fa-chevron-right"></i>John Mayer</p>
         </a>
-        <a href="">
-          <p><i class="fas fa-chevron-right"></i>ロック</p>
+        <a id="artist2" data-artist="oasis" href="javascript:void(0)">
+          <p><i class="fas fa-chevron-right"></i>oasis</p>
         </a>
-        <a href="">
-          <p><i class="fas fa-chevron-right"></i>オルタナティブ</p>
+        <a id="artist3" data-artist="Bruno Mars" href="javascript:void(0)">
+          <p><i class="fas fa-chevron-right"></i>Bruno Mars</p>
         </a>
-        <a href="">
-          <p><i class="fas fa-chevron-right"></i>ポップ</p>
+        <a id="artist4" data-artist="Ed Sheeran" href="javascript:void(0)">
+          <p><i class="fas fa-chevron-right"></i>Ed Sheeran</p>
         </a>
-        <a href="">
-          <p><i class="fas fa-chevron-right"></i>ブルース</p>
+        <a id="artist5" data-artist="Vulfpeck" href="javascript:void(0)">
+          <p><i class="fas fa-chevron-right"></i>Vulfpeck</p>
         </a>
-        <a href="">
-          <p><i class="fas fa-chevron-right"></i>アニメ</p>
+        <a id="artist6" data-artist="Red Hot Chili Peppers" href="javascript:void(0)">
+          <p><i class="fas fa-chevron-right"></i>RHCP</p>
         </a>
       </div>
     </div>
   </div>
   <div class="typeSection">
-    <h2 class="section__title">系統別</h2>
+    <h2 class="section__title">邦楽</h2>
     <div class="typeSection__contents container">
       <div class="typeSection__contents__store">
-        <a href="">
-          <p><i class="fas fa-chevron-right"></i>バンド</p>
+        <a id="artist7" data-artist="Tokyo Incidents" href="javascript:void(0)">
+          <p><i class="fas fa-chevron-right"></i>東京事変</p>
         </a>
-        <a href="">
-          <p><i class="fas fa-chevron-right"></i>男性ソロ</p>
+        <a id="artist8" data-artist="asian kung-fu generation" href="javascript:void(0)">
+          <p><i class="fas fa-chevron-right"></i>AKFG</p>
         </a>
-        <a href="">
-          <p><i class="fas fa-chevron-right"></i>女性ソロ</p>
+        <a id="artist9" data-artist="ellegarden" href="javascript:void(0)">
+          <p><i class="fas fa-chevron-right"></i>ELLEGARDEN</p>
         </a>
-        <a href="">
-          <p><i class="fas fa-chevron-right"></i>二人組</p>
+        <a id="artist10" data-artist="bump of chicken" href="javascript:void(0)">
+          <p><i class="fas fa-chevron-right"></i>BUMP OF CHICKEN</p>
         </a>
-        <a href="">
-          <p><i class="fas fa-chevron-right"></i>声優</p>
+        <a id="artist11" data-artist="radwimps" href="javascript:void(0)">
+          <p><i class="fas fa-chevron-right"></i>RADWIMPS</p>
         </a>
       </div>
     </div>

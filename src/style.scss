@@ -38,7 +38,6 @@ header {
     &__title {
       font-family: Yu Gothic;
       color: #ffffff;
-      width: 210px;
       height: 50px;
       font-size: 50px;
     }
@@ -138,7 +137,6 @@ header {
     width: 700px;
     .swiper-container {
       width: 100%;
-      height: 480px;
       overflow: visible;
       z-index: 1;
       .swiper-wrapper {
@@ -149,12 +147,16 @@ header {
           filter: brightness(70%);
           .swiper-content {
             width: 480px;
-            height: 100%;
             img {
               width: 480px;
               height: 480px;
               border-radius: 10px;
               margin-bottom: 10px;
+            }
+            h2 {
+              color: #ffffff;
+              width: 100%;
+              text-align: center;
             }
           }
         }
@@ -173,6 +175,7 @@ header {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  top: 231px;
   left: 0;
   background-clip: padding-box;
   &:after {
@@ -186,6 +189,7 @@ header {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  top: 231px;
   right: 0;
   background-clip: padding-box;
   &:after {
@@ -315,6 +319,7 @@ header {
         font-size: 14px;
         position: relative;
         display: inline;
+        letter-spacing: -0.5px;
         i {
           position: absolute;
           left: -15px;
@@ -325,39 +330,6 @@ header {
           -webkit-text-stroke-width: 1px;
           transition-duration: 0.2s;
         }
-      }
-    }
-    &__recruit {
-      border-radius: 5px;
-      box-shadow: 0px 1px 2px rgba($color: #000000, $alpha: 0.2);
-      height: 160px;
-      img {
-        width: 332px;
-        max-width: 100%;
-      }
-    }
-  }
-  &__listBtn {
-    background-color: #3E5FAA;
-    color: #ffffff;
-    font-size: 14px;
-    padding: 12.5px 0px;
-    width: 332px;
-    text-align: center;
-    border-radius: 5px;
-    font-weight: bold;
-    position: relative;
-    transition-duration: 0.2s;
-    i {
-      position: absolute;
-      top: 14px;
-      right: 10px;
-      transition-duration: 0.2s;
-    }
-    &:hover {
-      background-color: #657fbb;
-      i {
-        right: 8px;
       }
     }
   }
