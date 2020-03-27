@@ -300,13 +300,12 @@ header {
       justify-content: center;
       width: 620px;
       a {
-        width: 50px;
         transition-duration: 0.2s;
-        width: 125px;
+        min-width: 125px;
         border: solid 5px #DBDBDB;
         border-radius: 28px;
         margin: 0px 10px 20px;
-        padding: 15px;
+        padding: 15px 15px 15px 30px;
         display: flex;
         justify-content: center;
       }
