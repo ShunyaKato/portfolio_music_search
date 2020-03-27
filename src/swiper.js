@@ -20,7 +20,7 @@ var mySwiper1 = new Swiper('.main__slider', {
   breakpoints: {
     // 980ピクセル幅以下になったら
     680: {
-      spaceBetween: 0,
+      spaceBetween: 5,
     }
   },
   //   // 640ピクセル幅以下になったら
