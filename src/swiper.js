@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import Swiper from 'swiper';
 
 $('document').ready(function () {
 
