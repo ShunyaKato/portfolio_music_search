@@ -180,118 +180,26 @@
     height: 25px;
     border-width: 2.5px;
     left: -15px;
-    top: 85px;
+    top: 140.5px;
     &:after {
       font-size: 3px;
       padding-right: 1.5px;
     }
   }
   .swiper-button-next {
-    width: 25px;
-    height: 25px;
-    border-width: 2.5px;
+    @extend .swiper-button-prev;
+    left: auto;
     right: -15px;
-    top: 85px;
     &:after {
-      font-size: 3px;
-      padding-left: 2.5px;
+      @extend .swiper-button-prev:after;
     }
   }
 
-  .search__section {
-    &__contents {
-      box-sizing: border-box;
-      width: 100%;
-      padding: 6px 6px;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      a {
-        margin: 6px;
-        flex-grow: 1;
-        p {
-          font-size: 12px;
-          span {
-            font-size: 15px;
-          }
-        }
-      }
-      &__satudora, &__pharmacy {
-        width: 45%;
-        padding: 16.5px 0;
-        img {
-          width: 33px;
-          height: 33px;
-          padding-bottom: 20px;
-        }
-      }
-      &__taxfree {
-        background-color: #ffffff;
-        width: 100%;
-        margin: 6px;
-        border-radius: 5px;
-        &__shop {
-          padding: 5px 50px 0;
-          flex-direction: row !important;
-          justify-content: center !important;
-          img {
-            padding-bottom: 0;
-            height: 35px;
-            margin-right: 10px;
-          }
-          p {
-            flex-shrink: 0;
-          }
-        }
-        ul {
-          margin: 5px 15px 10px;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          li {
-            flex-grow: 1;
-            width: 30%;
-            a {
-              background-color: #3E5FAA;
-              margin: 5px 3px !important;
-              padding: 8px 0;
-              font-size: 12px;
-              color: #ffffff;
-              font-weight: bold;
-            }
-          }
-        } 
-      }  
-    }
-  }  
-
-  .typeSection {
+  .japaneseSection {
     padding: 30px 10px 30px;
     &__contents {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 20px;
-      &__store {
-        width: 70%;
-        a {
-          flex-direction: column;
-          padding-bottom: 20px;
-        }
-        a:hover {
-          text-decoration: underline;
-        }
-        p {
-        font-size: 13px;
-        }
-        &__days {
-          font-size: 11px !important;
-        }
-      }
-    }
-    &__listBtn {
-      font-size: 13px;
-      width: 100%;
-      i {
-        top: 14px;
+      &__artist {
+        width: 100%;
       }
     }
   }

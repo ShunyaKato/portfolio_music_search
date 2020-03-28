@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import { fetchApi } from './fetch'
 
-$('document').ready(async () => {
+$(document).ready(async () => {
   let data = await fetchApi("John Mayer");
   let res = data.response;
   console.log('---res---');
