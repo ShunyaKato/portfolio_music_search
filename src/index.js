@@ -5,3 +5,4 @@ import './header-responsive-open';
 // import './fetch'
 import './show-image';
 import './swiper';
+import './loading';
