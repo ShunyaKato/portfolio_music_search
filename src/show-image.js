@@ -2,110 +2,61 @@ import $ from 'jquery';
 import { fetchApi } from './fetch'
 
 $(document).ready(async () => {
-  let data = await fetchApi("John Mayer");
+  let data = await fetchApi("488");
   let res = data.response;
+  let songsLength = res.songs.length
   console.log('---res---');
   console.log(res);
-  console.log('--titile--');
-  console.log(res.hits[0].result.title);
-  console.log('--imagePath--');
-  console.log(res.hits[0].result.song_art_image_url);
-  console.log(res.hits.length);
+  // console.log('--titile--');
+  // console.log(res.hits[0].result.title);
+  // console.log('--imagePath--');
+  // console.log(res.hits[0].result.song_art_image_url);
+  // console.log(res.hits.length);
   let coverImage = [];
   let coverTitle = []
-  for (let i = 0; i < res.hits.length; i++) {
-    coverImage.push(res.hits[i].result.song_art_image_url);
-    coverTitle.push(res.hits[i].result.title);
-  }
-  console.log('--imagePath array--')
-  console.log(coverImage);
+  const createSongDataArray = () => {
+    for (let i = 0; i < songsLength; i++) {
+      coverImage.push(res.songs[i].song_art_image_url);
+      coverTitle.push(res.songs[i].title);
+    }
+  };
+  createSongDataArray();
+  // console.log('--imagePath array--')
+  // console.log(coverImage);
 
-  for (let i = 1; i < 5; i++) {
-    $(`#image${i} img`).attr('src', coverImage[i - 1]);
-    $(`#image${i} h2`).text(`${coverTitle[i - 1]}`);
-  }
+  const pickRandomSong = () => {
+    for (let i = 1; i < 5; i++) {
+      let randomNumber = Math.floor(Math.random() * songsLength)
+      // console.log('randomNumber')
+      // console.log(randomNumber);
+      // console.log('songsLength')
+      // console.log(songsLength)
+      $(`#image${i} img`).attr('src', coverImage[randomNumber]);
+      $(`#image${i} h2`).text(`${coverTitle[randomNumber]}`);
+      coverImage[randomNumber] = coverImage[songsLength - 1];
+      coverTitle[randomNumber] = coverTitle[songsLength - 1];
+      songsLength = songsLength - 1;
+    }
+  };
+  pickRandomSong();
 
   let showImageChange = () => {
     res = data.response;
-    console.log('---res---');
-    console.log(res);
+    songsLength = res.songs.length
+    // console.log('---res---');
+    // console.log(res);
     coverImage = [];
     coverTitle = [];
-    for (let i = 0; i < res.hits.length; i++) {
-      coverImage.push(res.hits[i].result.song_art_image_url);
-      coverTitle.push(res.hits[i].result.title);
-    }
-    for (let i = 1; i < 5; i++) {
-      $(`#image${i} img`).attr('src', coverImage[i - 1]);
-      $(`#image${i} h2`).text(`${coverTitle[i - 1]}`);
-    }
+    createSongDataArray();
+    pickRandomSong();
   }
 
-  $('#artist1').on('click', async function (event) {
-    console.log($(this).attr('data-artist'));
-    data = await fetchApi($(this).attr('data-artist'));
+  $('.js-showImage').on('click', async function () {
+    // console.log($(this));
+    // console.log($(this).attr('data-artist'));
+    data = await fetchApi($(this).attr('artist-id'));
     showImageChange();
-  });
-
-  $('#artist2').on('click', async function (event) {
-    console.log($(this).attr('data-artist'));
-    data = await fetchApi($(this).attr('data-artist'));
-    showImageChange();
-  });
-
-  $('#artist3').on('click', async function (event) {
-    console.log($(this).attr('data-artist'));
-    data = await fetchApi($(this).attr('data-artist'));
-    showImageChange();
-  });
-
-  $('#artist4').on('click', async function (event) {
-    console.log($(this).attr('data-artist'));
-    data = await fetchApi($(this).attr('data-artist'));
-    showImageChange();
-  });
-
-  $('#artist5').on('click', async function (event) {
-    console.log($(this).attr('data-artist'));
-    data = await fetchApi($(this).attr('data-artist'));
-    showImageChange();
-  });
-
-  $('#artist6').on('click', async function (event) {
-    console.log($(this).attr('data-artist'));
-    data = await fetchApi($(this).attr('data-artist'));
-    showImageChange();
-  });
-
-  $('#artist7').on('click', async function (event) {
-    console.log($(this).attr('data-artist'));
-    data = await fetchApi($(this).attr('data-artist'));
-    showImageChange();
-  });
-
-  $('#artist8').on('click', async function (event) {
-    console.log($(this).attr('data-artist'));
-    data = await fetchApi($(this).attr('data-artist'));
-    showImageChange();
-  });
-
-  $('#artist9').on('click', async function (event) {
-    console.log($(this).attr('data-artist'));
-    data = await fetchApi($(this).attr('data-artist'));
-    showImageChange();
-  });
-
-  $('#artist10').on('click', async function (event) {
-    console.log($(this).attr('data-artist'));
-    data = await fetchApi($(this).attr('data-artist'));
-    showImageChange();
-  });
-
-  $('#artist11').on('click', async function (event) {
-    console.log($(this).attr('data-artist'));
-    data = await fetchApi($(this).attr('data-artist'));
-    showImageChange();
-  });
+  })
 
 
 })
