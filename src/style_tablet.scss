@@ -150,11 +150,13 @@
           .swiper-slide {
             .swiper-content {
               width: 270px;
-              img {
+              .song-image {
                 width: 270px;
                 height: 270px;
-                border-radius: 10px;
-                margin-bottom: 10px;
+                p {
+                  font-size: 21px;
+                  top: 123px;
+                }
               }
               .content__copy {
                 &__type {

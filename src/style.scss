@@ -159,11 +159,50 @@ header {
           filter: brightness(70%);
           .swiper-content {
             width: 480px;
-            img {
+            .song-image {
+              position: relative;
+              margin-bottom: 10px;
+              border-radius: 10px;
               width: 480px;
               height: 480px;
-              border-radius: 10px;
-              margin-bottom: 10px;
+              overflow: hidden;
+              img {   
+                width: 100%;
+                height: 100%;
+              }   
+              p {
+                font-size: 32px;
+                color: #414141;
+                display: block;
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                top: 227px;
+                opacity: 0;
+                transition: opacity .5s .2s;
+                z-index: 10;
+              }
+              &::after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #ffffff;
+                opacity: 0.6;
+                transform: scale(2) translateX(-75%) translateY(-75%) rotate(28deg);
+                transition: transform 2s;
+              }
+            }
+            a:hover .song-image {
+              p {
+                opacity: 1;
+                transition: opacity .5s .7s;
+              }
+              &::after {
+                transform: scale(2) translateX(0%) translateY(0%) rotate(28deg);
+              }   
             }
             h2 {
               color: #ffffff;
@@ -179,6 +218,7 @@ header {
     }
   }
 }
+
 
 .swiper-button-prev {
   color: #ffffff;
