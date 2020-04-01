@@ -13,12 +13,16 @@ $(document).ready(async () => {
   // console.log(res.hits[0].result.song_art_image_url);
   // console.log(res.hits.length);
   let coverImage = [];
-  let coverTitle = []
+  let songTitle = [];
+  let songLink = [];
   const createSongDataArray = () => {
     for (let i = 0; i < songsLength; i++) {
       coverImage.push(res.songs[i].song_art_image_url);
-      coverTitle.push(res.songs[i].title);
+      songTitle.push(res.songs[i].title);
+      songLink.push(res.songs[i].url);
     }
+    console.log("songLink");
+    console.log(songLink);
   };
   createSongDataArray();
   // console.log('--imagePath array--')
@@ -32,9 +36,14 @@ $(document).ready(async () => {
       // console.log('songsLength')
       // console.log(songsLength)
       $(`#image${i} img`).attr('src', coverImage[randomNumber]);
-      $(`#image${i} h2`).text(`${coverTitle[randomNumber]}`);
+      $(`#image${i} h2`).text(`${songTitle[randomNumber]}`);
+      $(`#image${i} a`).attr('href', songLink[randomNumber]);
+      console.log('songLink[randomNumber]');
+      console.log(songLink[randomNumber]);
+
       coverImage[randomNumber] = coverImage[songsLength - 1];
-      coverTitle[randomNumber] = coverTitle[songsLength - 1];
+      songTitle[randomNumber] = songTitle[songsLength - 1];
+      songLink[randomNumber] = songLink[songsLength - 1];
       songsLength = songsLength - 1;
     }
   };
@@ -46,7 +55,8 @@ $(document).ready(async () => {
     // console.log('---res---');
     // console.log(res);
     coverImage = [];
-    coverTitle = [];
+    songTitle = [];
+    songLink = [];
     createSongDataArray();
     pickRandomSong();
   }
