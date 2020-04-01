@@ -14,12 +14,12 @@ $('document').ready(function () {
     effect: 'slide', // "slide", "fade"(フェード), "cube"(キューブ回転), "coverflow"(カバーフロー) または "flip"(平面回転)
     centeredSlides: true,
     // スライダーの自動再生
-    // autoplay: true, 　//のみなら既定値での自動再生
-    // autoplay: {
-    //   delay: 10000, // スライドが切り替わるまでの表示時間(ミリ秒)
-    //   stopOnLast: false, // 最後のスライドまで表示されたら自動再生を中止するか
-    //   disableOnInteraction: false // ユーザーのスワイプ操作を検出したら自動再生を中止するか
-    // },
+    autoplay: true, 　//のみなら既定値での自動再生
+    autoplay: {
+      delay: 7500, // スライドが切り替わるまでの表示時間(ミリ秒)
+      stopOnLast: false, // 最後のスライドまで表示されたら自動再生を中止するか
+      disableOnInteraction: false // ユーザーのスワイプ操作を検出したら自動再生を中止するか
+    },
     parallax: true,
     // レスポンシブ化条件
     breakpoints: {
